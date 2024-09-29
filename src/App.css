@@ -1,0 +1,166 @@
+.login-container{
+  height: 350px;
+  width: 330px;
+  margin-top: 200px;
+  
+  font-family: sans-serif;
+  background-color: #fdfeff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.login-container h4 {
+ font-size: small;
+ font-weight: 300;
+}
+.login-container h1{
+  padding-top: 30px;
+}
+.login-content label{
+  font-weight: 300;
+  font-size: small;
+  float: left;
+  margin-left: 33px;
+}
+.login-email{
+  width: 250px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  background-color: #d3d3d3;
+}
+.login-btn{
+  width: 260px;
+  padding: 10px;
+  margin-top: 8%;
+  border-radius: 8px;
+  border: none;
+  background-color: #059862;
+  color:#fff;
+  font-weight: bold;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
+}
+
+
+
+.nav-horizontal{
+  width: auto;
+  height: 40px;
+  background-color: #04AA6D;
+  overflow: hidden;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+
+}
+.nav-horizontal p{
+margin-left: 10px;
+}
+.empadd{
+  
+  float:right;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+  height: 550px;
+  margin-right : 600px;
+  margin-top: 100px;
+
+}
+.empadd form{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.add-imp{
+  padding: 8px;
+  border: none;
+  
+  background-color: #cccccc;
+  width: 330px;
+  margin-bottom: 10px;
+}
+.empadd input[type=submit]{
+  width: 350px;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #04AA6D;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.empadd input[type=date]{
+  padding: 8px;
+  width: 330px;
+}
+.empadd p{
+  text-align: center;
+  font-weight: bold;
+}
+.empadd label{
+  font-size: 15px;
+}
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 200px;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #059862;
+  color: white;
+}
+.del-btn{
+  padding: 5px 5px 5px 5px;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.update-btn{
+  padding: 5px 5px 5px 5px;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.nav-btn{
+  width: 255px;
+  border: none;
+  padding-bottom: 15px;
+  font-weight: bold;
+  cursor:pointer;
+  padding-top: 15px;
+  
+}
+.nav-btn:hover{
+  background-color: #04AA6D;
+  color: white;
+}
