@@ -42,7 +42,7 @@ export default function Update()
    const save=(event)=>{
     event.preventDefault()
     let data={empid,name,number,email,salary,date}
-    let urlAdd="http://localhost:9000/modify"
+    let urlAdd="https://ems-backend-1isx.onrender.com/modify"
     axios.put(urlAdd,data)
     .then(res=>{
         if(res.data.affectedRows==1)
