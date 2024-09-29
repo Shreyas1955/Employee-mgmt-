@@ -4,6 +4,8 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom";
 export default function Add()
     {
+
+        let backendUrl = 'https://ems-backend-1isx.onrender.com';
         const nav=useNavigate()
         useEffect(()=>{
             let un=localStorage.getItem("un")
@@ -44,7 +46,7 @@ export default function Add()
         }
         
         let d={email}
-        let url='http://localhost:9000/check'
+        let url=`${backendUrl}/check`;
         axios.post(url,d)
         .then(res=>{
             if(res.data.length>0){
@@ -56,7 +58,7 @@ export default function Add()
             else{
                 let data={empid,name,number,email,salary,date}
                 console.log(data)
-                let urlAdd='http://localhost:9000/savedata'
+                let urlAdd=`${backendUrl}/savedata`
                 axios.post(urlAdd,data)
                 .then(res=>{
                     if(res.data.affectedRows==1){
