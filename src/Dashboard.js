@@ -6,6 +6,7 @@ import Navbar from "./Navbar"
 
 export default function Dashboard()
 {
+     const backendUrl = 'https://ems-backend-1isx.onrender.com';
 
     useEffect(()=>{
         let un=localStorage.getItem("un")
@@ -23,7 +24,7 @@ export default function Dashboard()
     const [info,setInfo]=useState([])
 
     useEffect(()=>{
-        let urlAdd="http://localhost:9000/getdata"
+        let urlAdd=`${backendUrl}/getdata`;
         axios.get(urlAdd)
         .then(res=>{
             setInfo(res.data)
@@ -33,7 +34,7 @@ export default function Dashboard()
     },[])
 
     const del=(name)=>{
-        let urladd="http://localhost:9000/remove"
+        let urladd=`${backendUrl}/remove`;
         let d={data:{name}}
         axios.delete(urladd,d)
         .then(res=>{
